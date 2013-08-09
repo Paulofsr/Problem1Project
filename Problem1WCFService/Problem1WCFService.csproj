@@ -65,7 +65,9 @@
       <DependentUpon>Problem1DB.mdf</DependentUpon>
     </Content>
     <Content Include="ServiceProblem1.svc" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IServiceProblem1.cs" />

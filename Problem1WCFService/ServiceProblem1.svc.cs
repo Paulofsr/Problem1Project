@@ -67,12 +67,12 @@ namespace Problem1WCFService
             }
             if (!System.Text.RegularExpressions.Regex.IsMatch(celular, @"^([\+]\d{2}[- .]?)?[01]?[- .]?(\(\d{2}\)|\d{2}|\(\d{3}\)|\d{3})?[- .]?(\d{4}|\d{5})[- .]?\d{4}$"))
             {
-                result += string.Format("- Celular inválido. ({0})\n", email);
+                result += string.Format("- Celular inválido. ({0})\n", celular);
                 retorno = false;
             }
             if (!System.Text.RegularExpressions.Regex.IsMatch(telefoneResidencial, @"^([\+]\d{2}[- .]?)?[01]?[- .]?(\(\d{2}\)|\d{2}|\(\d{3}\)|\d{3})?[- .]?(\d{4}|\d{5})[- .]?\d{4}$"))
             {
-                result += string.Format("- Telefone Residencial inválido. ({0})\n", email);
+                result += string.Format("- Telefone Residencial inválido. ({0})\n", telefoneResidencial);
                 retorno = false;
             }
             try
